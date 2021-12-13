@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!C:\Users\Nanneys\Azure-Virtual-Network-with-ELK-Deployment\Diagrams\Azure_VN_&_ELK_Stack_Diagram.png
+![image](https://user-images.githubusercontent.com/88005785/145894794-3fb4d754-f67e-4e52-a754-9b76416248b3.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible and ELK playbook files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -76,7 +76,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!C:\Users\Nanneys\Azure-Virtual-Network-with-ELK-Deployment\Images\ELKServer_Docker_PS.png
+![image](https://user-images.githubusercontent.com/88005785/145894999-7ab5d516-f459-4594-9e32-b744187c86b4.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -85,10 +85,8 @@ This ELK server is configured to monitor the following machines:
 - VM4 - 10.0.0.7
 
 We have installed the following Beats on these machines:
-- Filebeat - C:\Users\Nanneys\Azure-Virtual-Network-with-ELK-Deployment\Images\Filebeat_Module_Status.png
-
-- Metricbeat - C:\Users\Nanneys\Azure-Virtual-Network-with-ELK-Deployment\Images\Metricbeat_Module_Status.png
-
+- Filebeat: ![image](https://user-images.githubusercontent.com/88005785/145895061-47b9e0c1-fa92-44a7-8eb1-d935c86560db.png)
+- Metricbeat: ![image](https://user-images.githubusercontent.com/88005785/145895094-a0616b46-6ae4-4e3e-a1c1-90caa784cb40.png)
 These Beats allow us to collect the following information from each machine:
 - Filebeat allows us to collect and ship log files. For example, Filebeat can collect deprecation logs. It is important to monitor deprecation logs to ensure we are working with the current versions of applications and services, including those in the ELK stack.
 - Metricbeat allows us to collect server data on a system-wide and per-process CPU. This information is important for monitoring CPU, memory and disk usage and the overall performance of the network.
